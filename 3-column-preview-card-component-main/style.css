@@ -6,106 +6,111 @@
   box-sizing: border-box;
 }
 :root {
-  --brightOrange: hsl(31, 77%, 52%);
-  --darkCyan: hsl(184, 100%, 22%);
-  --veryDarkCyan: hsl(179, 100%, 13%);
-  --white: hsl(0, 0%, 100%, 0.75);
-  --lightGray: hsl(0, 0%, 95%);
-}
+  --clr-brightOrange: hsl(31, 77%, 52%);
+  --clr-darkCyan: hsl(184, 100%, 22%);
+  --clr-veryDarkCyan: hsl(179, 100%, 13%);
 
+  --clr-transparentWhite: hsl(0, 0%, 100%, 0.75); /* paragraphs */
+  --clr-veryLightGray: hsl(0, 0%, 95%); /* background, headings, buttons */
+
+  --ff-primary: "Lexend Deca", sans-serif;
+  --ff-secondary: "Big Shoulders Display", cursive;
+}
 body {
-  background-color: var(--lightGray);
+  font-size: 15px;
+}
+main {
+  background-color: var(--clr-veryLightGray);
+  min-height: 100vh;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  font-family: "Lexend Deca", sans-serif;
-}
-.cars {
-  display: flex;
-}
-.car {
-  width: 300px;
-  height: 400px;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  color: var(--white);
-}
-.car:nth-child(1) {
-  background-color: var(--brightOrange);
-  border-top-left-radius: 0.5rem;
-  border-bottom-left-radius: 0.5rem;
-}
-.car:nth-child(1) button {
-  color: var(--brightOrange);
-}
-.car:nth-child(2) {
-  background-color: var(--darkCyan);
-}
-.car:nth-child(2) button {
-  color: var(--darkCyan);
-}
-.car:nth-child(3) {
-  background-color: var(--veryDarkCyan);
-  border-top-right-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
-}
-.car:nth-child(3) button {
-  color: var(--veryDarkCyan);
-}
-h2 {
-  margin-top: 1.5rem;
-  font-family: "Big Shoulders Display", cursive;
-  font-weight: 700;
-}
-p {
-  flex-grow: 2;
-  font-weight: 400;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-button {
-  padding: 0.8rem 1rem;
-  font-size: 1rem;
-  width: 60%;
-  border-radius: 2rem;
-  justify-self: flex-end;
-  margin-bottom: 1.5rem;
-  background-color: hsl(0, 0%, 95%);
-  font-weight: 400;
-  font-family: "Lexend Deca", sans-serif;
-  border: none;
-}
-button:hover,
-button:active {
-  color: white !important;
-  background-color: inherit !important;
-  border: 2px solid white !important;
-}
-@media screen and (max-width: 900px) {
-  .cars {
-    flex-direction: column;
-    width: 60%;
-  }
-  .car {
-    width: 100%;
-    height: 400px;
-  }
-  .car:nth-child(1) {
-    border-bottom-left-radius: 0;
-    border-top-right-radius: 0.5rem;
-    margin-top: 3rem;
-  }
-  .car:nth-child(3) {
-    border-top-right-radius: 0;
-    border-bottom-left-radius: 0.5rem;
-    margin-bottom: 3rem;
-  }
+
+  font-family: var(--ff-primary);
 }
 
-@media screen and (max-width: 668px) {
-  .cars {
-    width: 80%;
+.container {
+  width: auto;
+
+  display: flex;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+article {
+  width: 300px;
+  height: 450px;
+  padding: 2rem;
+  color: var(--clr-transparentWhite);
+  display: flex;
+  flex-direction: column;
+}
+article:nth-child(1) {
+  background-color: var(--clr-brightOrange);
+}
+article:nth-child(2) {
+  background-color: var(--clr-darkCyan);
+}
+article:nth-child(3) {
+  background-color: var(--clr-veryDarkCyan);
+}
+article:nth-child(1) a {
+  color: var(--clr-brightOrange);
+}
+article:nth-child(2) a {
+  color: var(--clr-darkCyan);
+}
+article:nth-child(3) a {
+  color: var(--clr-veryDarkCyan);
+}
+
+article img {
+  margin-top: 1rem;
+  width: 30%;
+}
+article h1 {
+  margin-top: 1.5rem;
+  color: var(--clr-veryLightGray);
+  font-weight: 700;
+  font-size: 2.5rem;
+  font-family: var(--ff-secondary);
+  text-transform: uppercase;
+}
+article p {
+  flex-grow: 1;
+  margin-top: 2rem;
+  font-weight: 400;
+}
+
+article a {
+  text-decoration: none;
+  padding: 1rem;
+  border: 2px solid white;
+  background-color: white;
+  border-radius: 1.5rem;
+  text-align: center;
+  width: 70%;
+  color: var(--clr-veryLightGray);
+
+  transition-property: background-color color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in;
+}
+article a:hover {
+  color: white;
+  background-color: var(--clr-transparentWhite);
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  article {
+    width: 375px;
+    height: 450px;
   }
 }
