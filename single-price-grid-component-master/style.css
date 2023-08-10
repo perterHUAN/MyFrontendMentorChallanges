@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-cyan: hsl(179, 62%, 43%);
+  --clr-brightYellow: hsl(71, 73%, 54%);
+  --clr-lightGray: hsl(204, 43%, 93%);
+  --clr-grayishBlue: hsl(218, 22%, 67%);
+  --clr-lightBlue: hsl(179deg 80.73% 41.11%);
+  --clr-gray: hsl(204deg 10.45% 68.49%);
+  --clr-quiteBlue: hsl(204deg 16.17% 83.62%);
+
+  --ff-primary: "Karla", sans-serif;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--clr-lightGray);
+  font-family: var(--ff-primary);
+}
+
+.container {
+  width: 700px;
+  background: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 1rem 1rem 0.5rem #ada6a6;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.join {
+  padding: 3rem;
+}
+h1 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+.price_info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.month_price {
+  padding: 3rem;
+  background-color: var(--clr-cyan);
+  width: 50%;
+}
+.why_us {
+  padding: 3rem;
+  background-color: var(--clr-lightBlue);
+  width: 50%;
+}
+.text-cyan {
+  color: var(--clr-cyan);
+}
+.text-yellow {
+  color: var(--clr-brightYellow);
+}
+.text-gray {
+  color: var(--clr-gray);
+}
+.text-lightGray {
+  color: var(--clr-lightGray);
+}
+.text-quiteBlue {
+  color: var(--clr-quiteBlue);
+}
+.price_number {
+  font-size: 2rem;
+  margin-right: 1rem;
+  font-weight: 700;
+}
+
+.join p {
+  font-weight: 700;
+}
+.why_us ul {
+  color: hsl(204deg 46.97% 84.56%);
+  line-height: 1.5;
+  list-style-type: none;
+}
+.month_price a {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  background-color: var(--clr-brightYellow);
+  padding: 1rem 1.4rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  box-shadow: 0 0.2rem 0.5rem#857272;
+  color: inherit;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    flex-direction: column;
+    width: 375px;
+    box-shadow: 0 1rem 1rem #ada6a6;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  .month_price {
+    width: 100%;
+  }
+  .why_us {
+    width: 100%;
+  }
+}
