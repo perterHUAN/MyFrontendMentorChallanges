@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --clr-paleBlue: hsl(225, 100%, 94%);
+  --clr-brightBlue: hsl(245, 75%, 52%);
+  --clr-veryPaleBlue: hsl(225, 100%, 98%);
+  --clr-desaturatedBlue: hsl(224, 23%, 55%);
+  --clr-darkBlue: hsl(223, 47%, 23%);
+}
+
+body {
+  min-height: 100vh;
+  background-image: url(./images/pattern-background-desktop.svg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Red Hat Display", sans-serif;
+  background-color: var(--clr-paleBlue);
+}
+.order {
+  width: 350px;
+  background: white;
+  text-align: center;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.order_description {
+  padding: 2rem;
+}
+img {
+  width: 100%;
+}
+
+.price {
+  padding: 1rem;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  background-color: var(--clr-veryPaleBlue);
+  border-radius: 0.4rem;
+}
+.order h1 {
+  font-size: 1.4rem;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+  color: var(--clr-darkBlue);
+}
+.order p {
+  color: var(--clr-desaturatedBlue);
+  font-weight: 700;
+}
+.price img {
+  width: 50px;
+  height: 50px;
+  margin-right: 2rem;
+}
+.price .annual_plan {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.price .annual_plan > span:nth-child(1) {
+  font-weight: 700;
+  color: var(--clr-darkBlue);
+}
+.price .annual_plan > span:nth-child(2) {
+  color: var(--clr-desaturatedBlue);
+}
+.price .change {
+  color: var(--clr-brightBlue);
+  font-weight: 700;
+
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.payment {
+  display: inline-block;
+  padding: 1rem;
+  width: 100%;
+  text-decoration: none;
+  background-color: var(--clr-brightBlue);
+  color: white;
+  font-weight: 700;
+  border-radius: 0.4rem;
+  box-shadow: 0 0.5rem 0.5rem var(--clr-desaturatedBlue);
+}
+.cancel {
+  display: inline-block;
+  margin-top: 2rem;
+  width: 100%;
+  border: none;
+  background-color: inherit;
+  font-weight: 700;
+  color: var(--clr-desaturatedBlue);
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.payment:hover {
+  background-color: var(--clr-paleBlue);
+}
+.change:hover {
+  color: var(--clr-paleBlue);
+  text-decoration: none;
+}
+.cancel:hover {
+  color: var(--clr-darkBlue);
+}
