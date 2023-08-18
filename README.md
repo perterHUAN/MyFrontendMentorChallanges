@@ -21,3 +21,6 @@ Building responsive layouts (beginner)
 1. Product preview card component
    - [Challange url](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa/hub)
    - [Live url](https://perterhuan.github.io/MyFrontendMentorChallanges/product-preview-card-component-main)
+2. Four card feature section
+   - [Challange url](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK/hub)
+   - [Live url](https://perterhuan.github.io/MyFrontendMentorChallanges/four-card-feature-section-master)

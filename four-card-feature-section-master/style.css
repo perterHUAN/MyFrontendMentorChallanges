@@ -1,0 +1,112 @@
+@import url("https:f2//fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  --clr-veryDarkBlue: hsl(234, 12%, 34%);
+  --clr-grayishBlue: hsl(229, 6%, 66%);
+  --clr-veryLightGray: hsl(0, 0%, 98%);
+  --clr-white: white;
+
+  --clr-red: hsl(0, 78%, 62%);
+  --clr-cyan: hsl(180, 62%, 55%);
+  --clr-orange: hsl(34, 97%, 64%);
+  --clr-blue: hsl(212, 86%, 64%);
+
+  --ff-primary: "Poppins", sans-serif;
+  font-size: 14px;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--clr-veryLightGray);
+  padding: 2rem;
+  font-family: var(--ff-primary);
+}
+
+header {
+  text-align: center;
+  width: 33em;
+  margin: 1rem auto 4rem auto;
+}
+header p:nth-child(1) {
+  font-size: 1.5rem;
+  color: var(--clr-grayishBlue);
+  margin-bottom: 0.3rem;
+}
+header p:nth-child(2) {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--clr-veryDarkBlue);
+  margin-bottom: 1.5rem;
+}
+header p:nth-child(3) {
+  color: var(--clr-grayishBlue);
+}
+
+section {
+  width: 25em;
+  padding: 1.5rem;
+  background-color: var(--clr-white);
+  box-shadow: 0 0.2rem 1rem var(--clr-grayishBlue);
+  border-radius: 0.2rem;
+  overflow: hidden;
+  border-top-width: 0.3rem;
+  border-top-style: solid;
+
+  margin: 0 auto;
+}
+section h2 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--clr-veryDarkBlue);
+}
+section p {
+  color: var(--clr-grayishBlue);
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+section div {
+  display: flex;
+  justify-content: flex-end;
+}
+section img {
+  width: 3rem;
+  float: right;
+}
+
+section:nth-child(1) {
+  border-top-color: var(--clr-cyan);
+  transform: translate(-110%, 50%);
+}
+section:nth-child(2) {
+  border-top-color: var(--clr-red);
+  transform: translate(0, -90%);
+}
+section:nth-child(3) {
+  border-top-color: var(--clr-orange);
+  transform: translate(0, -80%);
+}
+section:nth-child(4) {
+  border-top-color: var(--clr-blue);
+  transform: translate(110%, -233%);
+}
+main {
+  height: 33em;
+}
+
+@media screen and (max-width: 80em) {
+  section {
+    transform: none !important;
+    width: 20em;
+    margin-bottom: 2rem;
+  }
+  main {
+    height: auto;
+  }
+  header {
+    width: 20em;
+  }
+}
