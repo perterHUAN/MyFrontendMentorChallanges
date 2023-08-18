@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --clr-darkCyan: hsl(158, 36%, 37%);
+  --clr-cream: hsl(30, 38%, 92%);
+  --clr-veryDarkBlue: hsl(212, 21%, 14%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-darkGrayishBlue: hsl(228, 12%, 48%);
+  --ff-primary: "Montserrat", sans-serif;
+  --ff-secondary: "Fraunces", serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--clr-cream);
+  min-height: 100vh;
+}
+p {
+  font-size: 14px;
+}
+
+.container {
+  display: flex;
+  border-radius: 0.5rem;
+  overflow: hidden;
+
+  width: 34em;
+}
+.container > img {
+  width: 50%;
+}
+.product_info {
+  font-family: var(--ff-primary);
+  width: 50%;
+  padding: 2rem;
+  background-color: var(--clr-white);
+}
+
+.type {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  letter-spacing: 0.2em;
+  font-weight: 500;
+  color: var(--clr-darkGrayishBlue);
+}
+h2 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-family: var(--ff-secondary);
+  color: var(--clr-veryDarkBlue);
+}
+.introduction {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  color: var(--clr-darkGrayishBlue);
+}
+.price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.price span {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-right: 0.8em;
+  color: var(--clr-darkCyan);
+  font-family: var(--ff-secondary);
+}
+.price del {
+  color: var(--clr-darkGrayishBlue);
+  font-size: 0.7rem;
+}
+.add_to_cart {
+  display: inline-block;
+  width: 100%;
+  padding: 0.8rem 2rem;
+  background-color: var(--clr-darkCyan);
+  color: var(--clr-white);
+  border-radius: 0.3rem;
+  border: none;
+  font-weight: 700;
+}
+.add_to_cart img {
+  width: 1em;
+  margin-right: 0.5em;
+  fill: var(--clr-white);
+}
+.add_to_cart:hover {
+  background-color: var(--clr-veryDarkBlue);
+}
+
+@media screen and (max-width: 34em) {
+  .container {
+    flex-direction: column;
+    width: 20em;
+  }
+  .container > img {
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+  }
+  .container .product_info {
+    width: 100%;
+  }
+}

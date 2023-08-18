@@ -1,6 +1,7 @@
 # MyFrontendMentorChallanges
 
 record my Frontend Mentor's Challanges
+Getting started on Frontend Mentor (beginner)
 
 1. QR code component
    - [Challange url](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H)
@@ -14,3 +15,9 @@ record my Frontend Mentor's Challanges
 4. states-preview-card-component
    - [Challange url](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62/hub)
    - [Live url](https://perterhuan.github.io/MyFrontendMentorChallanges/stats-preview-card-component-main)
+
+Building responsive layouts (beginner)
+
+1. Product preview card component
+   - [Challange url](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa/hub)
+   - [Live url](https://perterhuan.github.io/MyFrontendMentorChallanges/product-preview-card-component-main)
