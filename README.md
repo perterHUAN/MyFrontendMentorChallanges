@@ -27,3 +27,6 @@ Building responsive layouts (beginner)
 3. Social proof section
    - [Challange url](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA/hub)
    - [Live url](https://perterhuan.github.io/MyFrontendMentorChallanges/social-proof-section-master)
+4. Testimonials grid section
+   - [Challange url](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7/hub)
+   - [Live url](https://perterhuan.github.io/MyFrontendMentorChallanges/testimonials-grid-section-main)
