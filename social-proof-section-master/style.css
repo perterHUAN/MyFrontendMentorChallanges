@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --clr-darkGrayishMagenta: hsl(303, 10%, 53%);
+  --clr-lightGrayishMagenta: hsl(300, 24%, 96%);
+  --clr-softPink: hsl(333, 80%, 67%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-veryDarkMagenta: hsl(300, 43%, 22%);
+  font-family: "League Spartan", sans-serif;
+  font-size: 15px;
+}
+
+body {
+  background-color: var(--clr-white);
+}
+body {
+  background: url(./images/bg-pattern-top-desktop.svg) top left no-repeat,
+    url(./images/bg-pattern-bottom-desktop.svg) bottom right no-repeat;
+}
+main {
+  max-width: 80%;
+  margin: 5rem auto 2rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 3rem;
+}
+
+.introduction {
+  width: 50%;
+}
+
+.introduction h1 {
+  color: var(--clr-veryDarkMagenta);
+  max-width: 7em;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.introduction p {
+  color: var(--clr-darkGrayishMagenta);
+  line-height: 1.5;
+  max-width: 25em;
+  font-weight: 500;
+}
+.rates {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  color: var(--clr-veryDarkMagenta);
+  font-weight: 700;
+}
+.rate_item {
+  padding: 1rem;
+  background-color: var(--clr-lightGrayishMagenta);
+  width: 25em;
+  border-radius: 0.4rem;
+  display: flex;
+  gap: 1em;
+}
+.rate_item:nth-child(1) {
+  align-self: flex-start;
+}
+
+.rate_item:nth-child(2) {
+  align-self: center;
+}
+.rate_item:nth-child(3) {
+  align-self: flex-end;
+}
+
+.commands {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  height: 20em;
+  width: 100%;
+}
+.command {
+  padding: 2rem;
+  background-color: var(--clr-veryDarkMagenta);
+  color: var(--clr-white);
+  border-radius: 0.5rem;
+}
+.command header {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1em;
+  margin-bottom: 2em;
+}
+.command header img {
+  width: 2.5em;
+  border-radius: 50%;
+  object-fit: contain;
+}
+.command header .name {
+  margin-bottom: 0.5em;
+  font-weight: 700;
+}
+.command header .identify {
+  font-weight: 700;
+  color: var(--clr-softPink);
+}
+.command p {
+  width: 17em;
+  line-height: 1.5;
+}
+.command:nth-child(1) {
+  align-self: flex-start;
+}
+.command:nth-child(2) {
+  align-self: center;
+}
+.command:nth-child(3) {
+  align-self: flex-end;
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 38em;
+  }
+  .introduction,
+  .rates {
+    width: 100%;
+  }
+
+  .introduction h1,
+  .introduction p {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .rate_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .rate_item:nth-child(1),
+  .rate_item:nth-child(2),
+  .rate_item:nth-child(3) {
+    align-self: center;
+  }
+  .commands {
+    flex-direction: column;
+    height: auto;
+  }
+  .command:nth-child(1),
+  .command:nth-child(2),
+  .command:nth-child(3) {
+    align-self: center;
+  }
+  body {
+    background: url(./images/bg-pattern-bottom-mobile.svg) bottom right
+        no-repeat,
+      url(./images/bg-pattern-top-mobile.svg) top left no-repeat;
+  }
+}
+@media screen and (max-width: 740px) {
+  main {
+    width: 90%;
+  }
+}

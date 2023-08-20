@@ -24,3 +24,6 @@ Building responsive layouts (beginner)
 2. Four card feature section
    - [Challange url](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK/hub)
    - [Live url](https://perterhuan.github.io/MyFrontendMentorChallanges/four-card-feature-section-master)
+3. Social proof section
+   - [Challange url](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA/hub)
+   - [Live url](https://perterhuan.github.io/MyFrontendMentorChallanges/social-proof-section-master)
