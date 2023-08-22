@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  --clr-blue: hsl(223, 87%, 63%);
+  --clr-paleBlue: hsl(223, 100%, 88%);
+  --clr-lightRed: hsl(354, 100%, 66%);
+
+  --clr-gray: hsl(0, 0%, 59%);
+  --clr-veryDarkBlue: hsl(209, 33%, 12%);
+  font-size: 20px;
+  font-family: "Libre Franklin", sans-serif;
+}
+body {
+  text-align: center;
+}
+header {
+  color: var(--clr-veryDarkBlue);
+}
+header > img {
+  margin-top: 3rem;
+}
+header h1 {
+  margin-top: 1em;
+  margin-bottom: 0.3em;
+}
+header h1 span {
+  color: var(--clr-gray);
+  font-weight: 300;
+}
+main {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+main .notify > span {
+  position: relative;
+}
+main .notify span span {
+  display: none;
+  position: absolute;
+  left: 2em;
+  top: 2.2em;
+}
+main .notify .sucessful span {
+  display: inline-block;
+  color: var(--clr-blue);
+}
+main .notify .fail span {
+  display: inline-block;
+  color: var(--clr-lightRed);
+}
+main .notify input {
+  width: 33em;
+  padding: 1em 2em;
+  border-radius: 2em;
+  border: 0.1em solid var(--clr-paleBlue);
+  background-color: white;
+  color: var(--clr-paleBlue);
+  margin-right: 1.5em;
+  font-weight: 600;
+}
+main .notify input::placeholder {
+  color: var(--clr-paleBlue);
+}
+main .notify button {
+  padding: 1em 3em;
+  background-color: var(--clr-blue);
+  border: none;
+  border-radius: 2em;
+  color: white;
+  font-weight: 700;
+  box-shadow: 0 0.5em 0.5em var(--clr-paleBlue);
+}
+main .notify {
+  margin-bottom: 5rem;
+}
+main > img {
+  width: 75%;
+}
+
+footer .icons img {
+  width: 1.5em;
+  margin-right: 0.5em;
+}
+footer .icons {
+  margin-bottom: 1em;
+}
+footer p {
+  color: var(--clr-gray);
+  font-size: 1rem;
+  margin-bottom: 3rem;
+}
+@media screen and (max-width: 650px) {
+  main .notify input {
+    width: 75%;
+    margin-right: 0;
+    margin-bottom: 0.7em;
+    display: inline-block;
+  }
+  main .notify .sucessful input,
+  main .notify .fail input {
+    margin-bottom: 3em;
+  }
+  main .notify button {
+    width: 75%;
+  }
+  main img {
+    width: 85%;
+  }
+}
