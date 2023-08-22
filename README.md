@@ -30,3 +30,9 @@ Building responsive layouts (beginner)
 4. Testimonials grid section
    - [Challange url](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7/hub)
    - [Live url](https://perterhuan.github.io/MyFrontendMentorChallanges/testimonials-grid-section-main)
+
+Javascript fundamentals (beginner)
+
+1. Ping single column coming soon page
+   - [Challange url](https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da/hub)
+   - [Live url](https://perterhuan.github.io/MyFrontendMentorChallanges/ping-coming-soon-page-master/)
