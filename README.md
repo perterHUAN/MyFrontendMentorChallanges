@@ -36,3 +36,6 @@ Javascript fundamentals (beginner)
 1. Ping single column coming soon page
    - [Challange url](https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da/hub)
    - [Live url](https://perterhuan.github.io/MyFrontendMentorChallanges/ping-coming-soon-page-master/)
+2. Interactive rating component
+   - [Challange url](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI/hub)
+   - [Live url](https://perterhuan.github.io/MyFrontendMentorChallanges/interactive-rating-component-main/)
