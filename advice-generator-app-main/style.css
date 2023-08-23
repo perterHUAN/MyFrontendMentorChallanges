@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  --clr-lightCyan: hsl(193, 38%, 86%);
+  --clr-darkBlue: hsl(218, 23%, 16%);
+  --clr-neonGreen: hsl(150, 100%, 66%);
+  --clr-grayishBlue: hsl(217, 19%, 38%);
+  --clr-darkGrayishBlue: hsl(217, 19%, 24%);
+
+  font-size: 28px;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  background-color: var(--clr-darkBlue);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.card {
+  width: 85%;
+  max-width: 18em;
+  text-align: center;
+  padding: 1rem;
+  padding-bottom: 1.5rem;
+  background-color: var(--clr-darkGrayishBlue);
+  position: relative;
+  border-radius: 0.5rem;
+}
+.card img[alt="divider"] {
+  width: 100%;
+}
+.card header {
+  font-size: 0.5rem;
+  word-spacing: 0.5em;
+  letter-spacing: 0.2em;
+  color: var(--clr-neonGreen);
+  text-transform: uppercase;
+  margin-bottom: 1.5em;
+}
+.card main {
+  opacity: 0.8;
+}
+.card p {
+  margin-bottom: 1em;
+}
+.card .dice {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+  width: 3em;
+  height: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--clr-neonGreen);
+  border: none;
+}
+.card .dice img {
+  width: 40%;
+}
+.card .dice:hover {
+  /* filter: brightness(1.5); */
+  box-shadow: 0 0 2em var(--clr-neonGreen);
+}

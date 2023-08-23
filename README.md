@@ -42,3 +42,6 @@ Javascript fundamentals (beginner)
 3. Intro component with sign-up form
    - [Challange url](https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1/hub)
    - [Live url](https://perterhuan.github.io/MyFrontendMentorChallanges/intro-component-with-signup-form-master/)
+4. Advice generator app
+   - [Challange url](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db/hub)
+   - [Live url](https://perterhuan.github.io/MyFrontendMentorChallanges/advice-generator-app.main/)
