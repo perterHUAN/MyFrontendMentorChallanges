@@ -45,3 +45,6 @@ Javascript fundamentals (beginner)
 4. Advice generator app
    - [Challange url](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db/hub)
    - [Live url](https://perterhuan.github.io/MyFrontendMentorChallanges/advice-generator-app-main/)
+5. Results summary component
+   - [Challange url](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV/hub)
+   - [Live url](https://perterhuan.github.io/MyFrontendMentorChallanges/results-summary-component-main/)
