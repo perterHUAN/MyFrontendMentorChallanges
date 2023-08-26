@@ -48,3 +48,6 @@ Javascript fundamentals (beginner)
 5. Results summary component
    - [Challange url](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV/hub)
    - [Live url](https://perterhuan.github.io/MyFrontendMentorChallanges/results-summary-component-main/)
+6. Tip calculator app
+   - [Challange url](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX/hub)
+   - [Live url](https://perterhuan.github.io/MyFrontendMentorChallanges/tip-calculator-app-main/)
