@@ -158,13 +158,20 @@ main {
 @media screen and (max-width: 813px) {
   main {
     width: 20em;
+    max-width: 90%;
     flex-direction: column;
   }
   .info_set {
     width: 100%;
     margin-bottom: 1em;
   }
+  .info_set .bill_set input,
+  .info_set .person_set input {
+    width: 100%;
+  }
+
   .show {
     width: 100%;
+    gap: 1em;
   }
 }
