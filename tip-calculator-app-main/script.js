@@ -46,7 +46,7 @@ tipE.addEventListener("click", (e) => {
 
 personE.addEventListener("change", (e) => {
   const error = document.querySelector(".person_set .title .error");
-  if (Number(e.target.value) < 0) {
+  if (Number(e.target.value) === 0) {
     error.textContent = "Can't be zero";
     error.classList.add("error");
   } else {
